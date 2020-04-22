@@ -9,7 +9,7 @@
 * AJAX
 
 ## ENDPOINTS                     
-* For lyrics - "https://private-anon-a5926d9d60-lyricsovh.apiary-proxy.com/v1/"
+* For lyrics - "https://private-anon-e523216712-lyricsovh.apiary-proxy.com/v1/"
 * For album - "https://deezerdevs-deezer.p.rapidapi.com/search?q="
 * For hit albums of Selena Gomez - "https://genius.p.rapidapi.com/search?q=selena%20gomez"
 
