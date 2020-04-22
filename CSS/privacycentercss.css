@@ -1,0 +1,77 @@
+body
+{
+    background-image: url("../Images/BACKGROUND/privacycenterback2.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+.header
+{
+    position: fixed;
+    top:0vw;
+    left:0vw;
+    z-index: 1;
+    background: rgb(0,0,0);
+    height: 5vw;
+    width:98vw;
+}
+
+#heading
+{
+    padding-left: 1vw;
+    padding-top: 0vw;
+    font-family: Brush Script MT;
+    font-size: 4vw;
+    font-weight:bold;
+    color:hotpink;
+    text-decoration: none;
+}
+#imga
+{
+    position: absolute;
+    right:0vw;
+    top:0vw;
+    padding-top:0vw;
+    padding-right:1vw;
+    width:6vw;
+    height:6vw;
+    display: block;
+}
+.image {
+
+  display: block;
+  width: 5vw;
+  height: 5vw;
+
+}
+
+
+h1
+{
+
+  color: #ff80c1;
+  font: normal 5vw 'century gothic', arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+p
+{
+    color: #cc0066;
+    font-family: sans-serif;
+    font-size:1.5vw;
+font-weight:100;
+}
+
+.center_div
+{
+    margin-top: 5vw;
+    background: rgb(1,1,1,0.5);
+    position: absolute;
+    left: 16vw;
+    right: 16vw;
+    padding: 1vw;
+   border: 2px solid #99004d;
+}

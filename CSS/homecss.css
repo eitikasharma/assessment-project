@@ -1,0 +1,167 @@
+body
+{
+    margin:0;
+    background-color: black;
+    color:antiquewhite;
+}
+
+.header
+{
+    position: fixed;
+    top:0vw;
+    z-index: 1;
+    background: rgb(0,0,0);
+    height: 5vw;
+    width:100%;
+    margin-bottom: 2vw;
+}
+
+#heading
+{
+    padding-left: 1vw;
+    padding-top: 0vw;
+    font-family: Brush Script MT;
+    font-size: 4vw;
+    font-weight:bold;
+    color:hotpink;
+    text-decoration: none;
+}
+#imga
+{
+    position: absolute;
+    right:0vw;
+    top:0vw;
+    padding-top:0vw;
+    padding-right:1vw;
+    width:6vw;
+    height:6vw;
+    display: block;
+}
+.image { 
+
+  display: block;
+  width: 5vw;
+  height: 5vw;
+        
+}
+
+.col1,.col4
+{
+    width:24vw;
+    height:41vw;
+    float: left;
+    margin-top: 5.5vw;
+}
+.col2,.col3
+{
+    width:25vw;
+    height:41vw;
+    float: left;
+    margin-top: 5.5vw;
+}
+#img4
+{
+       width:25vw;
+    height:41vw;
+    display: block;
+}
+
+.text {
+  color: white;
+font-family: sans-serif;    
+  font-size: 3vw;
+  position: absolute;
+  top: 30vw;
+  left: 12vw;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+.overlay1
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0,0,0,0.4);
+  overflow: hidden;
+  width: 24vw;
+  height:0;
+  transition: .5s ease;
+}
+
+.col1:hover .overlay1 {
+  bottom: 0;
+  height: 45vw;
+}
+
+
+
+.overlay2
+{
+  position: absolute;
+  bottom: 100vw;
+  left:24vw;
+  right: 0;
+  background-color: rgb(0,0,0,0.4);
+  overflow: hidden;
+  width: 25vw;
+  height:0;
+  transition: .5s ease;
+}
+
+.col2:hover .overlay2 {
+  bottom: 0;
+  height: 45vw;
+}
+
+
+
+
+
+.overlay3
+{
+  position: absolute;
+  bottom: 0;
+  left: 49vw;
+  right: 0;
+  background-color: rgb(0,0,0,0.4);
+  overflow: hidden;
+  width: 25vw;
+  height:0;
+  transition: .5s ease;
+}
+
+.col3:hover .overlay3 {
+  bottom: 0;
+  height: 45vw;
+}
+
+
+
+
+
+
+.overlay4
+{
+  position: absolute;
+  bottom: 100vw;
+  left: 74vw;
+  right: 0;
+  background-color: rgb(0,0,0,0.4);
+  overflow: hidden;
+  width: 25vw;
+  height:0;
+  transition: .5s ease;
+}
+
+.col4:hover .overlay4 {
+  bottom: 0;
+  height: 45vw;
+}

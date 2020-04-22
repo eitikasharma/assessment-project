@@ -1,0 +1,163 @@
+body
+{
+	  background-image: url("../Images/BACKGROUND/aboutback.jpg");
+	  background-size: 99vw;
+     background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.header
+{
+    position: fixed;
+    top:0vw;
+    left:0vw;
+    z-index: 1;
+    background: rgb(0,0,0);
+    height: 5vw;
+    width:98vw;
+
+}
+
+#heading
+{
+    padding-left: 1vw;
+    padding-top: 0vw;
+    font-family: Brush Script MT;
+    font-size: 4vw;
+    font-weight:bold;
+    color:hotpink;
+    text-decoration: none;
+}
+#imga
+{
+    position: absolute;
+    right:0vw;
+    top:0vw;
+    padding-top:0vw;
+    padding-right:1vw;
+    width:6vw;
+    height:6vw;
+    display: block;
+}
+.image { 
+
+  display: block;
+  width: 5vw;
+  height: 5vw;
+        
+}
+
+
+
+
+p
+{ font-size: 2vw;
+  margin: 0vw;
+  padding: 0vw 0vw 1vw 0vw;
+  line-height: 1.7em;
+    color:aliceblue;
+}
+h1{
+  color: #ec99a5;
+  font: normal 7vw 'century gothic', arial, sans-serif;
+  margin: 0 0 2vw 0;
+  padding: 0vw 0 0vw 0;
+    
+}
+
+
+.sidebar
+{ float: right;
+  width: 15vw;
+  padding: 0 1vw 1vw 1vw;
+}
+
+
+h5
+{ font: italic 3vw arial, sans-serif;
+  color: #888;
+font-size:1.5vw;
+padding-bottom: 1vw;
+    margin-bottom: 0vw;
+     margin-top: 0vw;
+}
+
+h6
+{ 
+    font: italic 1vw arial, sans-serif;
+    color: #ec99a5;
+    font-size:2vw;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+    
+}
+h2
+{
+        font: italic 2vw arial, sans-serif;
+    color: #ec99a5;
+    font-size:3vw;
+    padding-bottom: 0vw;
+    margin-bottom: 0vw;
+}
+a
+{ outline: none;
+text-decoration: none;
+color: white;}
+
+
+ul
+{ margin: 1vw 0vw 2vw 2vw;
+  padding: 0vw;
+}
+
+ul li
+{ font-size: 1.5vw;
+  list-style-type: square;
+  margin: 0vw 0vw 1vw 0vw; 
+  padding: 0vw;
+color: white;}
+
+ #site_content
+{ margin-left: auto; 
+  margin-right: auto;}
+
+
+#site_content
+{ width: 70vw;
+  overflow: hidden;
+  margin: 10vw auto 0 auto;
+  padding: 1vw 2vw 2vw 2vw;
+  background: black url(back.png) repeat-y;
+  border: 1.5vw solid #303030;
+    
+} 
+
+
+
+li{
+  color: white;
+} 
+a:hover{
+  text-decoration: none;
+  color: #444;
+}
+
+#content
+{ text-align: left;
+  width: 54vw;
+  padding: 0;
+   
+
+}
+
+#content ul
+{ margin: 0vw 0 2vw 0vw;}
+
+#content ul li
+{ list-style-type: none;
+  background: url(bullet.png) no-repeat;
+  margin: 0 0 0 0; 
+  padding: 0 0 0vw 1vw;
+  line-height: 1.5em;}

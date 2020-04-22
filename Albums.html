@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title>D'Vine Grind - Albums</title>
+    <link rel="stylesheet" href="CSS\albumcss.css">
+  </head>
+<body>
+
+    <!--header-->
+    <section>
+            <div class="header">
+
+            <div id="heading"><a id="heading" href="index.html">D' Vine Grind</a> </div>
+
+            <div id="imga"> <img class="image" src="Images\LOGO\music.png" > </div>
+
+            </div>
+    </section>
+
+
+    <!--inputs-->
+    <section>
+            <div class="userInput" style="margin-top: 150px;">
+                SEARCH BOX:&nbsp;&nbsp;
+                <input type="text" name="Search_Input" id="Search_Input" placeholder="Search Any Album"><br><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="search" onclick="fetchData()">Search</button>
+            </div>
+    </section>
+
+
+
+<!--script-->
+<section>
+<script>
+function fetchData()
+{
+   xhr= new XMLHttpRequest();
+    var data;
+        xhr.onreadystatechange = function()
+        {
+                if (this.readyState == 4 && this.status == 200)
+                {
+                    data=this.responseText;
+                    displayData(JSON.parse(data).data);
+                    console.log(this.responseText);
+                }
+            };
+
+  var Name=document.getElementById("Search_Input").value.replace(" ","%20");
+
+  xhr.open("GET", "https://deezerdevs-deezer.p.rapidapi.com/search?q="+Name);
+  xhr.setRequestHeader("x-rapidapi-host", "deezerdevs-deezer.p.rapidapi.com");
+  xhr.setRequestHeader("x-rapidapi-key", "5b7607c628mshcc89363a21e5879p1e8d8fjsn3777348cb3ad");
+
+  xhr.send(data);
+}
+
+function displayData(arr)
+    {
+        var divMain= document.getElementById("resTest");
+
+        var child = divMain.lastElementChild;
+        while (child)
+        {
+            divMain.removeChild(child);
+            child = divMain.lastElementChild;
+        }
+
+
+
+        for(var i=0;i<arr.length;i++)
+        {
+            var resDiv= document.createElement("div");
+            resDiv.setAttribute("id",i+1);
+            resDiv.setAttribute("style","width:20vw;float:left;height:20vw;margin-bottom:10vw;padding-left:5vw;");
+
+            var image = document.createElement("img");
+            image.setAttribute("src",arr[i].album.cover_medium);
+            image.setAttribute("height","250vw");
+            image.setAttribute("width","250vw");
+            resDiv.appendChild(image);
+
+            var lineBreak = document.createElement("br");
+            resDiv.appendChild(lineBreak);
+
+            var title = document.createElement("label");
+            title.innerHTML="Title: "+arr[i].title;
+            title.setAttribute("style","font-family:Verdana;font-size:1vw;");
+            resDiv.appendChild(title);
+
+            var lineBreak = document.createElement("br");
+            resDiv.appendChild(lineBreak);
+
+            var atistName = document.createElement("label");
+            atistName.innerHTML="Artist:- "+arr[i].artist.name;
+            atistName.setAttribute("style","font-family:Verdana;font-size:1vw");
+            resDiv.appendChild(atistName);
+
+            divMain.appendChild(resDiv);
+
+        }
+
+    }
+</script>
+</section>
+
+
+  <div id="resTest">
+
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>D'Vine Grind - Sing Along</title>
+    <link rel="stylesheet" href="CSS\lyricscss.css">
+  </head>
+<body>
+
+    <!--header-->
+    <section>
+            <div class="header">
+
+            <div id="heading"><a id="heading" href="index.html">D' Vine Grind</a> </div>
+
+            <div id="imga"> <img class="image" src="Images\LOGO\music.png" > </div>
+
+            </div>
+    </section>
+
+
+    <!--inputs-->
+    <section>
+            <div class="userInput" style="margin-top: 150px;">
+                Artist Name:&nbsp;&nbsp;<input type="text" name="artistInput" id="artistInput" placeholder="Artist Name"><br><br>
+                Track Name:&nbsp;&nbsp;<input type="text" name="trackInput" id="trackInput" placeholder="Track Name"><br><br>
+                &nbsp;&nbsp;&nbsp;<button id="search" onclick="fetchData()">Search</button>
+            </div>
+    </section>
+
+
+
+<!--script-->
+<section>
+<script>
+function fetchData()
+{
+
+
+  xhr= new XMLHttpRequest();
+  var data;
+
+  xhr.onreadystatechange = function()
+  {
+     if (this.readyState == 4 && this.status == 200)
+     {
+        data=JSON.parse(this.responseText);
+        displayData(data.lyrics);
+     }
+  };
+
+  var aName=document.getElementById("artistInput").value.replace(" ","%20");
+  var tName=document.getElementById("trackInput").value.replace(" ","%20");
+
+  xhr.open("GET", "https://private-anon-e523216712-lyricsovh.apiary-proxy.com/v1/"+aName+"/"+tName);
+
+  xhr.send();
+}
+
+function displayData(lyrics)
+{
+  var res = document.getElementById("resultDiv");
+  res.innerHTML="<pre>"+lyrics+"</pre>";
+}
+
+</script>
+</section>
+
+
+  <div id="resultDiv">    </div>
+
+
+</body>
+</html>

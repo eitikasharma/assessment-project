@@ -1,0 +1,93 @@
+body
+{
+    margin: 0vw;
+    background-image:url("../Images/BACKGROUND/lyricsback.jpg");
+     background-repeat: no-repeat;
+    background-size: auto;
+     background-attachment: fixed;
+}
+.header
+{
+    position: fixed;
+    top:0vw;
+    z-index: 1;
+    background: rgb(0,0,0);
+    height: 5vw;
+    width:100%;
+    margin-bottom: 2vw;
+}
+
+#heading
+{
+    padding-left: 1vw;
+    padding-top: 0vw;
+    font-family: Brush Script MT;
+    font-size: 4vw;
+    font-weight:bold;
+    color:hotpink;
+    text-decoration: none;
+}
+#imga
+{
+    position: absolute;
+    right:0vw;
+    top:0vw;
+    padding-top:0vw;
+    padding-right:1vw;
+    width:6vw;
+    height:6vw;
+    display: block;
+}
+.image {
+
+  display: block;
+  width: 5vw;
+  height: 5vw;
+
+}
+
+
+.userInput
+{
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+}
+
+#artistInput, #trackInput
+{
+    background-color:#b3b3b3 ;
+    color: #99003d;
+    text-align: center;
+     width:15vw;
+    height:2vw;
+}
+input
+{
+      width:360px;
+      height:30px;
+      border-radius:10px;
+      font-size:15px;
+      font-weight: bold;
+      background-color: #ebebe0;
+}
+
+#search
+{
+    border-radius: 10px;
+    background-color: #ffe6f0;
+    color:#99003d;
+    font-size:1.25vw;
+    text-align: center;
+    width:10vw;
+    height:2.5vw;
+    font-weight: bolder;
+}
+
+#resultDiv
+{
+    margin-left: 5vw;
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-weight: bold;
+}

@@ -1,0 +1,113 @@
+body
+{
+        margin: 0vw;
+    background-image:url("../Images/BACKGROUND/lyricsback2.jpg");
+     background-repeat: no-repeat;
+    background-size: auto;
+     background-attachment: fixed;
+}
+.header
+{
+    position: fixed;
+    top:0vw;
+    z-index: 1;
+    background: rgb(0,0,0);
+    height: 5vw;
+    width:100%;
+    margin-bottom: 3vw;
+}
+
+#heading
+{
+    padding-left: 1vw;
+    padding-top: 0vw;
+    font-family: Brush Script MT;
+    font-size: 4vw;
+    font-weight:bold;
+    color:hotpink;
+    text-decoration: none;
+}
+#imga
+{
+    position: absolute;
+    right:0vw;
+    top:0vw;
+    padding-top:0vw;
+    padding-right:1vw;
+    width:6vw;
+    height:6vw;
+    display: block;
+}
+.image {
+
+  display: block;
+  width: 5vw;
+  height: 5vw;
+
+}
+
+h1
+{
+  color: #e6f9ff;
+  font: normal 4vw 'century gothic', arial, sans-serif;
+    margin-top: 6vw;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 2vw red;
+}
+
+.midDiv
+{
+    margin: 5vw;
+    color: deeppink;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    font-weight: bold;
+   background: rgb(0,0,0,0.6);
+    border:1vw solid grey;
+    padding: 2vw;
+    text-align: center;
+}
+
+
+
+#image-selena
+{
+    width: 25vw;
+    height:40vw;
+    float: right;
+    padding-left:2vw;
+
+}
+
+h2
+{
+    color: #ffb3b3;
+    font: normal 3vw 'century gothic', arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+hr
+{
+     width: 80%;
+  border:2px solid grey;
+}
+
+#resTest
+{
+    margin-top: 5vw;
+    margin-left:10vw;
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+
+p,a
+{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vw;
+}

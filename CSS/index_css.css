@@ -1,0 +1,131 @@
+body
+{
+    margin:0;
+    background-color: black;
+    color:antiquewhite;
+}
+
+.header
+{
+    position: fixed;
+    top:0vw;
+    z-index: 1;
+    background: rgb(0,0,0,0.3);
+    height: 7vw;
+    width:98vw;
+    margin-bottom: 20vw;
+}
+
+#heading
+{
+    padding-left: 1vw;
+    padding-top: 2vw;
+    font-family: 'Brush Script MT',Georgia,Times,'Times New Roman',serif;
+    font-size: 4vw;
+    font-weight:bold;
+    color:hotpink;
+    
+}
+#imga
+{
+    position: absolute;
+    right:0vw;
+    top:0vw;
+    padding-top:2vw;
+    padding-right:2vw;
+    width:6vw;
+    height:6vw;
+    display: block;
+}
+.image { 
+
+  display: block;
+  width: 5vw;
+  height: 5vw;
+        
+}
+
+
+
+.video_div
+{
+    position: absolute;
+    top:7vw;
+    height:38vw;
+    width:98vw;
+    margin-bottom: 2vw;
+}
+.videoautoplay
+{
+    padding-left:6vw;
+    height:38vw;
+    width:98vw;
+    
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0vw;
+    top:45vw;
+    height: 20vw;
+    width:98vw;
+}
+
+.footer_link
+{
+    color:white;
+    text-decoration: none;
+    font-size:1.5vw;
+    font-weight: bolder;
+}
+.footer_link:hover
+{
+    color: hotpink;
+    text-decoration: none;
+}
+.left_small
+{
+    padding-left: 4vw;
+    padding-top: 3vw;
+    
+}
+.small_link
+{
+   text-decoration: none;
+    color: antiquewhite;
+}
+
+
+.footer_creator
+{
+    color:pink;
+    text-decoration: none;
+    font-size:3vw;
+    font-weight: bolder;
+}
+.footer_creator:hover
+{
+    color: springgreen;
+    text-decoration: none;
+}
+
+
+
+.connect_us
+{
+    position: absolute;
+    top:8vw;
+    right:5vw;  
+   
+}
+.footer_logo
+{
+    height: 2vw;
+    width: 2vw;   
+}
+.flag_logo
+{
+    height: 1.5vw;
+    width: 2vw;  
+}

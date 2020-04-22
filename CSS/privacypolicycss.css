@@ -1,0 +1,90 @@
+body
+{   
+    background-image: url("../Images/BACKGROUND/privacypolicyback.jpg");
+
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+
+
+
+.header
+{
+    position: fixed;
+    top:0vw;
+    left:0vw;
+    z-index: 1;
+    background: rgb(0,0,0);
+    height: 5vw;
+    width:99vw;
+}
+
+#heading
+{
+    padding-left: 1vw;
+    padding-top: 0vw;
+    font-family: Brush Script MT;
+    font-size: 4vw;
+    font-weight:bold;
+    color:hotpink;
+    text-decoration: none;
+}
+#imga
+{
+    position: absolute;
+    right:0vw;
+    top:0vw;
+    padding-top:0vw;
+    padding-right:1vw;
+    width:6vw;
+    height:6vw;
+    display: block;
+}
+.image { 
+
+  display: block;
+  width: 5vw;
+  height: 5vw;
+        
+}
+
+a
+{
+    text-decoration: none;
+        color:  #99ffbb;
+    font-family: sans-serif;
+    font-size:1.5vw;
+}
+
+h1
+{  
+  color: #e6f9ff;
+  font: normal 6vw 'century gothic', arial, sans-serif;
+    margin-top: 6vw;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 2vw red;
+}
+
+.center_div
+{
+    background: rgb(0,0,0,0.3); 
+    position: absolute;
+    left: 20vw;
+    right: 20vw;
+    margin-bottom: 2vw;
+    padding: 1vw;
+    border:1vw solid grey;
+}
+ol
+{
+    color: antiquewhite;
+    font-size: 2vw;
+}
+p,ul
+{
+    color:  #99ffbb;
+    font-family: sans-serif;
+    font-size:1.5vw;
+    
+}

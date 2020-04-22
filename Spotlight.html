@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <title>D'Vine Grind - SPOTLIGHT: SELENA GOMEZ</title>
+    <link rel="stylesheet" href="CSS\spotlight.css">  
+  </head>
+<body>
+
+    <!--header-->
+    <section>
+            <div class="header">
+            
+            <div id="heading"><a id="heading" href="index.html">D' Vine Grind</a> </div>
+             
+            <div id="imga"> <img class="image" src="Images\LOGO\music.png" > </div>
+              
+            </div>
+    </section>
+
+    <h1>SELENA GOMEZ</h1>
+    
+    <div class="midDiv">   
+    <img id="image-selena" src="Images/BACKGROUND/selena_gomez4.jpg">
+        Selena Marie Gomez (born July 22, 1992) is an American singer, songwriter, actress, and television producer. She's described as a pop singer and songwriter, showcasing the genre in form of dance-pop and incorporating EDM into her sound. As her career has been progressing, she has been experimenting with a large number of music genres. While her debut album with The Scene was inspired in electronic rock and pop rock, her following records with the band opted for a dance-pop sound. A Year Without Rain noted synth-pop characteristics and When the Sun Goes Down went into a more electropop and electro-disco-influenced musical direction. Her debut solo record Stars Dance was rooted in the EDM-pop genre, and Gomez herself described it as "baby dubstep", featuring elements from multiple genres as electronic, disco, techno or dancehall. Her songs "The Heart Wants What It Wants" and "Good for You" have been described as "minimalistic" and "grown-up", transitioning her sound into adult pop.
+    </div>
+    
+    
+    <br>
+    <br>
+    
+    <!--script-->
+<section>
+<script>
+ fetchData();
+    function fetchData()
+    {
+            xhr= new XMLHttpRequest();
+            var data;
+            xhr.onreadystatechange = function() 
+            {
+                if (this.readyState == 4 && this.status == 200)
+                {
+                    data=this.responseText;
+                    displayData(JSON.parse(data).response.hits);
+                    console.log(this.responseText);  
+                }
+            };
+
+        xhr.open("GET", "https://genius.p.rapidapi.com/search?q=selena%20gomez");
+        xhr.setRequestHeader("x-rapidapi-host", "genius.p.rapidapi.com");
+        xhr.setRequestHeader("x-rapidapi-key", "143a2fde38msh2b01b22d5fb5ca3p174983jsn2f3075a79fb9");
+        xhr.send();
+     }
+        
+    function displayData(arr)
+    {
+        var divMain= document.getElementById("resTest");
+
+        var child = divMain.lastElementChild;  
+        while (child)
+        {
+            divMain.removeChild(child);
+            child = divMain.lastElementChild;
+        }
+
+        
+        
+        for(var i=0;i<arr.length;i++)
+        {
+            var resDiv= document.createElement("div");
+            resDiv.setAttribute("id",i+1);
+            resDiv.setAttribute("style","width:20vw;float:left;height:20vw;margin-bottom:10vw;padding-right:5vw;padding-left:2vw;");
+
+            var image = document.createElement("img");
+            image.setAttribute("src",arr[i].result.song_art_image_thumbnail_url);
+            image.setAttribute("height","250vw");
+            image.setAttribute("width","250vw");          
+            resDiv.appendChild(image);
+
+            var lineBreak = document.createElement("br");
+            resDiv.appendChild(lineBreak);
+
+            var title = document.createElement("label");
+            title.innerHTML="Title Name :- "+arr[i].result.title;
+            title.setAttribute("style","font-family:Verdana;font-size:1vw;");
+            resDiv.appendChild(title);
+
+            var lineBreak = document.createElement("br");
+            resDiv.appendChild(lineBreak);
+
+            var atistName = document.createElement("label");
+            atistName.innerHTML="Primary Artist Name :- "+arr[i].result.primary_artist.name;
+            atistName.setAttribute("style","font-family:Verdana;font-size:1vw");
+            resDiv.appendChild(atistName);
+
+            var lineBreak = document.createElement("br");
+            resDiv.appendChild(lineBreak);
+
+            var urlLyrics = document.createElement("a");
+            urlLyrics.setAttribute("href",arr[i].result.url);
+            urlLyrics.setAttribute("target","_blank");
+            urlLyrics.innerHTML = "Click here for lyrics"; 
+            urlLyrics.setAttribute("style","font-family:Verdana;font-size:1vw;color:white");
+            resDiv.appendChild(urlLyrics);
+
+            var lineBreak = document.createElement("br");
+            resDiv.appendChild(lineBreak);
+            
+            divMain.appendChild(resDiv);  
+
+        }
+}
+
+
+</script>
+    </section>  
+    
+    
+    <br>
+    <hr>
+    <br>
+    <h2> HIT ALBUMS of SELENA GOMEZ</h2>
+    
+    
+<div id="resTest">
+    
+    
+    </div>
+    
+    
+    
+<br>
+<hr>
+    
+    
+<p> FOR MORE PLEASE VISIT SELENA GOMEZ'S OFFICIAL SITE - <a href="https://www.selenagomez.com/">https://www.selenagomez.com </a></p>
+</body>    
+</html>

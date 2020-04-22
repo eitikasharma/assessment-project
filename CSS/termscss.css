@@ -1,0 +1,82 @@
+body
+{   
+    background-image: url("../Images/BACKGROUND/termsback.jpg");
+    background-size: 98vw;	
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+
+.header
+{
+    position: fixed;
+    top:0vw;
+    left:0vw;
+    z-index: 1;
+    background: rgb(0,0,0);
+    height: 5vw;
+    width:98vw;
+}
+
+#heading
+{
+    padding-left: 1vw;
+    padding-top: 0vw;
+    font-family: Brush Script MT;
+    font-size: 4vw;
+    font-weight:bold;
+    color:hotpink;
+    text-decoration: none;
+}
+#imga
+{
+    position: absolute;
+    right:0vw;
+    top:0vw;
+    padding-top:0vw;
+    padding-right:1vw;
+    width:6vw;
+    height:6vw;
+    display: block;
+}
+.image { 
+
+  display: block;
+  width: 5vw;
+  height: 5vw;
+        
+}
+
+.text
+{
+    position: absolute;
+    left:2vw;
+    width: 48vw;
+}
+h1
+{
+    
+  color: #ec99a5;
+  font: normal 3vw 'century gothic', arial, sans-serif;
+  margin-top: 8vw;
+    font-weight: bolder;
+}
+h6       
+{
+  color: #ec99a5;
+  font: normal 2vw 'century gothic', arial, sans-serif; 
+  font-weight: bolder;
+    
+}
+
+p,ul
+{
+    color:gainsboro;
+    font-size:1.25vw;
+    font-family: sans-serif;
+}
+
+ol
+{
+    color:paleturquoise;
+    font-size: 2vw;
+}
